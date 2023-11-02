@@ -1,1 +1,0 @@
-export { TeacherLogin } from "./TeacherLogin";
