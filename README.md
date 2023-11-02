@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# EduScan - Attendance System Based on Facial Recognition #
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Team Members: ##
+<a href="https://github.com/erum-meraj" target="_blank">Erum Meraj</a>  
 
-## Available Scripts
+<a href="https://github.com/taniaban2712" target="_blank">Tania Banerjee</a>  
 
-In the project directory, you can run:
+<a href="https://github.com/vruddhis" target="_blank">Vruddhi Shah</a>  
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Objective: ##
+Manual attendance tracking is time-consuming for teachers in educational institutions. It can result in errors and discrepancies in attendance records.Transcribing attendance data from paper records to a computerized system can be a time-consuming and labor-intensive task, especially in large educational institutions with numerous classes and students. This system aims to overcome these challenges by simplifying attendance management.  
+## Features: ##
+* Marking attendance based on facial recognition
+* Generate reports of the student’s attendance in different lectures
+* Sending monthly e-mails to the student if their attendance is below 75%
+* A dedicated frontend for students, allowing them to view their own attendance records and receive notifications
+* A leaderboard based on attendance
+* A discussion panel where students and teachers can engage in discussions on educational topics.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## TechStack: ##
+* Python
+* Dash
+* OpenCV
+* HTML, CSS
+* Javascript
+* React.js
+* Postgresql
 
-### `npm test`
+## Future Scope: ##
+* Developing a comprehensive dashboard for teachers and administrators with more detailed statistics and visualizations like graphs and charts
+* Implement class duration tracking to provide insights into how much time each student spends in class
+* A quizzing module within the app to allow teachers to create, administer, and grade quizzes, tests, and assessments digitally
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
