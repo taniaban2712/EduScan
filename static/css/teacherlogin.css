@@ -1,0 +1,202 @@
+.teacher-login {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .teacher-login .overlap-group-wrapper {
+    background-color: #ffffff;
+    width: 1440px;
+    height: 1024px;
+  }
+  
+  .teacher-login .overlap-group {
+    position: relative;
+    width: 1379px;
+    height: 972px;
+    top: 25px;
+    left: 29px;
+    background-color: #f5e6e8;
+    border-radius: 67px;
+    box-shadow: 0px 4px 4px #00000040;
+  }
+  
+  .teacher-login .es-removebg-preview {
+    position: absolute;
+    width: 169px;
+    height: 171px;
+    top: 0;
+    left: 17px;
+    object-fit: cover;
+  }
+  
+  .teacher-login .text-wrapper {
+    position: absolute;
+    width: 426px;
+    top: 20px;
+    left: 506px;
+    font-family: "Average Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #967aa1;
+    font-size: 100px;
+    letter-spacing: 2px;
+    line-height: 119.8px;
+    white-space: nowrap;
+  }
+  
+  .teacher-login .rectangle {
+    position: absolute;
+    width: 643px;
+    height: 701px;
+    top: 192px;
+    left: 369px;
+    background-color: #aaa1c8;
+    border-radius: 67px;
+    box-shadow: 0px 4px 4px #00000040;
+    opacity: 0.7;
+  }
+  
+  .teacher-login .div {
+    position: absolute;
+    width: 1379px;
+    height: 972px;
+    top: 0;
+    left: 0;
+    background-color: #f5e6e8;
+    border-radius: 67px;
+    box-shadow: 0px 4px 4px #00000040;
+  }
+  
+  .teacher-login .text-wrapper-2 {
+    position: absolute;
+    top: 778px;
+    left: 587px;
+    font-family: "Average Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #f5e6e8;
+    font-size: 30px;
+    letter-spacing: 0.6px;
+    line-height: 35.9px;
+    white-space: nowrap;
+  }
+  
+  .teacher-login .text-wrapper-3 {
+    position: absolute;
+    top: 255px;
+    left: 499px;
+    font-family: "Average Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #f5e6e8;
+    font-size: 64px;
+    letter-spacing: 1.28px;
+    line-height: 76.7px;
+    white-space: nowrap;
+  }
+  
+  .teacher-login .text-wrapper-4 {
+    position: absolute;
+    top: 380px;
+    left: 410px;
+    font-family: "Average Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #967aa1;
+    font-size: 45px;
+    letter-spacing: 0.9px;
+    line-height: 53.9px;
+    white-space: nowrap;
+  }
+  
+  .teacher-login .text-wrapper-5 {
+    position: absolute;
+    top: 380px;
+    left: 410px;
+    font-family: "Average Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #f5e6e8;
+    font-size: 45px;
+    letter-spacing: 0.9px;
+    line-height: 53.9px;
+    white-space: nowrap;
+  }
+  
+  .teacher-login .text-wrapper-6 {
+    position: absolute;
+    top: 471px;
+    left: 407px;
+    font-family: "Average Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #f5e6e8;
+    font-size: 45px;
+    letter-spacing: 0.9px;
+    line-height: 53.9px;
+    white-space: nowrap;
+  }
+  
+  .teacher-login .rectangle-2 {
+    position: absolute;
+    width: 318px;
+    height: 50px;
+    top: 385px;
+    left: 624px;
+    background-color: #f5e6e8e8;
+    border-radius: 20px;
+  }
+  
+  .teacher-login .rectangle-3 {
+    position: absolute;
+    width: 318px;
+    height: 50px;
+    top: 481px;
+    left: 624px;
+    background-color: #f5e6e8;
+    border-radius: 20px;
+  }
+  
+  .teacher-login .rectangle-4 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 586px;
+    left: 575px;
+    background-color: #ffffff;
+    border-radius: 3px;
+  }
+  
+  .teacher-login .text-wrapper-7 {
+    position: absolute;
+    top: 582px;
+    left: 619px;
+    font-family: "Average Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #f5e6e8;
+    font-size: 30px;
+    letter-spacing: 0.6px;
+    line-height: 35.9px;
+    white-space: nowrap;
+  }
+  
+  .teacher-login .rectangle-5 {
+    position: absolute;
+    width: 259px;
+    height: 77px;
+    top: 665px;
+    left: 560px;
+    background-color: #967aa1;
+    border-radius: 96px;
+  }
+  
+  .teacher-login .text-wrapper-8 {
+    position: absolute;
+    top: 679px;
+    left: 645px;
+    font-family: "Average Sans-Regular", Helvetica;
+    font-weight: 400;
+    color: #f5e6e8;
+    font-size: 40px;
+    letter-spacing: 0.8px;
+    line-height: 47.9px;
+    white-space: nowrap;
+  }
+  
