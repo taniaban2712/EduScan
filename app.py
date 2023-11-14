@@ -1,6 +1,6 @@
 import cv2
 import os
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template, url_for
 from datetime import date
 from datetime import datetime
 import numpy as np
@@ -146,6 +146,12 @@ def deletefolder(duser):
 
 # Our main page
 @app.route("/")
+def dashboard():
+    return render_template("dashboard.html")
+
+
+# attendance page
+@app.route("/attendance")
 def home():
     names, rolls, times, l = extract_attendance()
 
