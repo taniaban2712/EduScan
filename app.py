@@ -146,8 +146,28 @@ def deletefolder(duser):
 
 # Our main page
 @app.route("/")
+def welcome():
+    return render_template("welcome.html")
+
+
+@app.route("/teacherlogin.html")
+def teacherlogin():
+    return render_template("teacherlogin.html")
+
+
+@app.route("/studentlogin.html")
+def studentlogin():
+    return render_template("studentlogin.html")
+
+
+@app.route("/dashboard.html")
 def dashboard():
     return render_template("dashboard.html")
+
+
+@app.route("/signup.html")
+def signup():
+    return render_template("signup.html")
 
 
 # attendance page
