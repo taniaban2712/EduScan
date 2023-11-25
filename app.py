@@ -165,6 +165,11 @@ def dashboard():
     return render_template("dashboard.html")
 
 
+@app.route("/studentlogin_new.html")
+def studentlogin_new():
+    return render_template("studentlogin_new.html")
+
+
 @app.route("/signup.html")
 def signup():
     return render_template("signup.html")
