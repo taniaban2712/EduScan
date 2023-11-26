@@ -1,6 +1,6 @@
 import cv2
 import os
-from flask import Flask, request, render_template, url_for
+from flask import Flask, request, render_template, url_for, redirect
 from datetime import date
 from datetime import datetime
 import numpy as np
@@ -155,24 +155,49 @@ def teacherlogin():
     return render_template("teacherlogin.html")
 
 
-@app.route("/studentlogin.html")
+@app.route("/signup.html", methods=["POST", "GET"])
+def signup():
+    if request.method == "POST":
+        client = pymongo.MongoClient("mongodb://localhost:27017")
+        db = client["EduScan"]
+        collection = db["user_data"]
+        un = request.form.get("username")
+        password = request.form.get("password")
+        user_type = request.form.get("user_type")
+        data = {"username": un, "user_type": user_type, "password": password}
+        collection.insert_one(data)
+        if True:
+            return redirect(url_for("welcome"))
+    return render_template("signup.html")
+
+
+@app.route("/studentlogin.html", methods=["GET", "POST"])
 def studentlogin():
+    if request.method == "POST":
+        client = pymongo.MongoClient("mongodb://localhost:27017")
+        db = client["EduScan"]
+        collection = db["user_data"]
+        un = request.form.get("username")
+        password = request.form.get("password")
+        data = collection.find(
+            {"username": un, "password": password}, {"_id": 0, "Name": 1}
+        )
+        if data.count() > 0:
+            return redirect(url_for("dashboard"))
     return render_template("studentlogin.html")
 
 
 @app.route("/dashboard.html")
 def dashboard():
+    # username = request.form["username"]
+    # password = request.form["password"]
+    # print(username, password)
     return render_template("dashboard.html")
 
 
-@app.route("/studentlogin_new.html")
-def studentlogin_new():
-    return render_template("studentlogin_new.html")
-
-
-@app.route("/signup.html")
-def signup():
-    return render_template("signup.html")
+# @app.route("/studentlogin_new.html")
+# def studentlogin_new():
+#     return render_template("studentlogin_new.html")
 
 
 # attendance page

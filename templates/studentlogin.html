@@ -14,17 +14,18 @@
             <div class="rectangle"></div>
             <div class="group">
               <div class="div"></div>
+              <form action="{{ url_for('studentlogin') }}" method="POST">
               <div class="text-wrapper-2">Email :</div>
               <div class="text-wrapper-3">Student Login</div>
               <div class="text-wrapper-4">Password :</div>
-              <input class="rectangle-2"></input>
-              <input class="rectangle-3"></input>
-          
+              <input type="text" class="rectangle-2" name="username"></input>
+              <input type="password" class="rectangle-3" name="password"></input>
+              <div class="text-wrapper-5">Remember Me</div>
+              <div class="text-wrapper-6">Forgot Password?</div>
+              <input class="rectangle-4"></input>
+              <div class="text-wrapper-7"><button type="submit"style="color:#f5e6e8">Login</button></div>
+            </form>
             </div>
-            <div class="text-wrapper-5">Remember Me</div>
-            <div class="text-wrapper-6">Forgot Password?</div>
-            <input class="rectangle-4"></input>
-            <div class="text-wrapper-7"><a class="link" href="dashboard.html" style="color:#f5e6e8">Login</a></div>
           </div>
         </div>
       </div>
