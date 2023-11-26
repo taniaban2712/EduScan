@@ -2,30 +2,31 @@
 <html>
   <head>
     <link rel="stylesheet" href="{{ url_for('static',filename='css/globals.css') }}" />
-    <link rel="stylesheet" href="{{ url_for('static',filename='css/teacherlogin.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/studentlogin.css') }}" />
   </head>
   <body>
-    <div class="teacher-login">
+    <div class="student-login">
       <div class="overlap-group-wrapper">
         <div class="overlap-group">
           <img class="es-removebg-preview" src="static/assests/EduScan-logo.png" />
           <div class="text-wrapper">EduScan</div>
-          <div class="rectangle"></div>
-          <div class="div"></div>
-          <img class="es-removebg-preview" src="static/assests/EduScan-logo.png" />
-          <div class="text-wrapper">EduScan</div>
-          <div class="rectangle"></div>
-          <div class="text-wrapper-2">Forgot Password?</div>
-          <div class="text-wrapper-3">Teacher Login</div>
-          <div class="text-wrapper-4">Username :</div>
-          <div class="text-wrapper-5">Username :</div>
-          <div class="text-wrapper-6">Password :</div>
-          <input class="rectangle-2"></input>
-          <input class="rectangle-3"></input>
-          <input class="rectangle-4"></input>
-          <input type="checkbox" class="text-wrapper-7">Remember Me</input>
-          <div class="rectangle-5"></div>
-          <div class="text-wrapper-8"><a class="link" href="dashboard.html">Login</a></div>
+          <div class="overlap">
+            <div class="rectangle"></div>
+            <div class="group">
+              <div class="div"></div>
+              <form action="{{ url_for('studentlogin') }}" method="POST">
+              <div class="text-wrapper-2">Username :</div>
+              <div class="text-wrapper-3">Teacher Login</div>
+              <div class="text-wrapper-4">Password :</div>
+              <input type="text" class="rectangle-2" name="username"></input>
+              <input type="password" class="rectangle-3" name="password"></input>
+              <div class="text-wrapper-5">Remember Me</div>
+              <div class="text-wrapper-6">Forgot Password?</div>
+              <input class="rectangle-4"></input>
+              <div class="text-wrapper-7"><button type="submit"style="color:#f5e6e8">Login</button></div>
+            </form>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -1,33 +1,38 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="globals.css" />
-    <link rel="stylesheet" href="signup.css" />
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/globals.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/signup.css') }}" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </head>
   <body>
     <div class="signup">
       <div class="overlap-group-wrapper">
         <div class="overlap-group">
-          <div class="format">
-            <img class="es-removebg-preview" src="https://c.animaapp.com/04ct86hS/img/es-removebg-preview-2.svg" />
-          </div>
+          <div class="format"><img class="es-removebg-preview" src="img/es-removebg-preview-2.svg" /></div>
           <div class="rectangle"></div>
           <div class="group">
-            <div class="text-wrapper">Email :</div>
-            <div class="div">Password :</div>
-            <div class="rectangle-2"></div>
-            <div class="rectangle-3"></div>
+            <form action="{{ url_for('signup') }}" method="POST">
+              <div class="text-wrapper">Name :</div>
+              <div class="div">Password :</div>
+              <input class="rectangle-2" name="username"></input>
+              <input class="rectangle-3" name="password"></input>
+              <div class="text-wrapper-4">Select Type:</div>
+              <select name="user_type">
+                <option value="student">Student</option>
+                <option value="teacher">Teacher</option>
+              </select>
+              <button type="submit" class="text-wrapper-2">Sign - up</button>
+            </form>
+           
           </div>
-          <div class="text-wrapper-2">Sign - up</div>
+         
           <div class="rectangle-4"></div>
           <div class="text-wrapper-3">Continue</div>
-          <div class="dropdown">
-            <button class="dropbtn">Select User Type</button>
-            <div class="dropdown-content">
-              <a href="#">Student</a>
-              <a href="#">Teacher</a>
-            </div>
-          </div>
+          <div class="rectangle-5"></div>
+          
+          
         </div>
       </div>
     </div>

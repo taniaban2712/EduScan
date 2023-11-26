@@ -83,25 +83,12 @@ def create_connection():
 
 # Extract info from today's attendance file in attendance folder
 def extract_attendance():
-    df = pd.read_csv(f"Attendance/Attendance-{datetoday}.csv")
+    # df = pd.read_csv(f"Attendance/Attendance-{datetoday}.csv")
     collection = create_connection()
-    # print(collection)
-    data = collection.find()
-    name = list()
-    rolls = list()
-    time = list()
-    # print("ye")
-    for i in data:
-        # print(i)
-        if type(i) == dict:
-            name.append(i["Name"])
-            rolls.append(i["Roll"])
-            time.append(i["Time"])
-
-    # print(name)
-    names = name
-    rolls = rolls
-    times = time
+    df = pd.read_csv(f"Attendance/Attendance-{datetoday}.csv")
+    names = df["Name"]
+    rolls = df["Roll"]
+    times = df["Time"]
     l = len(df)
     return names, rolls, times, l
 
@@ -150,8 +137,23 @@ def welcome():
     return render_template("welcome.html")
 
 
-@app.route("/teacherlogin.html")
+@app.route("/teacherlogin.html", methods=["GET", "POST"])
 def teacherlogin():
+    if request.method == "POST":
+        client = pymongo.MongoClient("mongodb://localhost:27017")
+        db = client["EduScan"]
+        collection = db["user_data"]
+        un = request.form.get("username")
+        password = request.form.get("password")
+        # print(un, password)
+        data = collection.find(
+            {"username": un, "password": password}, {"_id": 0, "Name": 1}
+        )
+        # for i in data:
+        #     print(i)
+        # if data.count() > 0:
+        return redirect(url_for("dashboard"))
+    # return render_template("studentlogin.html")
     return render_template("teacherlogin.html")
 
 
@@ -179,11 +181,14 @@ def studentlogin():
         collection = db["user_data"]
         un = request.form.get("username")
         password = request.form.get("password")
+        # print(un, password)
         data = collection.find(
             {"username": un, "password": password}, {"_id": 0, "Name": 1}
         )
-        if data.count() > 0:
-            return redirect(url_for("dashboard"))
+        # for i in data:
+        #     print(i)
+        # if data.count() > 0:
+        return redirect(url_for("dashboard"))
     return render_template("studentlogin.html")
 
 
