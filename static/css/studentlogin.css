@@ -83,7 +83,8 @@
     top: 330px;
     left: 168px;
     background-color: #ffffff;
-    border-radius: 3px;
+    border-radius: 5px;
+    border: 1px solid #000000;
   }
   
   .student-login .text-wrapper-2 {
@@ -93,7 +94,7 @@
     font-family: "Average Sans-Regular", Helvetica;
     font-weight: 400;
     color: #f5e6e8;
-    font-size: 45px;
+    font-size: 38px;
     letter-spacing: 0.9px;
     line-height: 53.9px;
     white-space: nowrap;
@@ -119,7 +120,7 @@
     font-family: "Average Sans-Regular", Helvetica;
     font-weight: 400;
     color: #f5e6e8;
-    font-size: 45px;
+    font-size: 38px;
     letter-spacing: 0.9px;
     line-height: 53.9px;
     white-space: nowrap;
@@ -149,9 +150,9 @@
   
   .student-login .text-wrapper-5 {
     position: absolute;
-    top: 390px;
+    top: 330px;
     font-size: 20px;
-    left: 250px;
+    left: 235px;
     font-family: "Average Sans-Regular", Helvetica;
     font-weight: 400;
     color: #f5e6e8;
@@ -163,8 +164,8 @@
   
   .student-login .text-wrapper-6 {
     position: absolute;
-    top: 586px;
-    left: 206px;
+    top: 576px;
+    left: 193px;
     font-family: "Average Sans-Regular", Helvetica;
     font-weight: 400;
     color: #f5e6e8;
@@ -178,22 +179,10 @@
     position: absolute;
     width: 259px;
     height: 77px;
-    top: 473px;
-    left: 191px;
+    top: 450px;
+    left: 175px;
     background-color: #967aa1;
     border-radius: 96px;
-  }
-  
-  .student-login .text-wrapper-7 {
-    position: absolute;
-    top: 482px;
-    left: 270px;
-    font-family: "Average Sans-Regular", Helvetica;
-    font-weight: 400;
-    color: #f5e6e8;
-    font-size: 40px;
-    letter-spacing: 0.8px;
-    line-height: 47.9px;
-    white-space: nowrap;
+    font-size: 35px;
   }
   
